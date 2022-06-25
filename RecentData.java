@@ -10,4 +10,27 @@ public class RecentsData {
         this.countryname=countryname;
         this.price=price;
     }
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getPlacename() {
+        return placename;
+    }
+
+    public void setPlacename(String placename) {
+        this.placename = placename;
+    }
+
+    public String getCountryname() {
+        return countryname;
+    }
+
+    public void setCountryname(String countryname) {
+        this.countryname = countryname;
+    }
 }
