@@ -1,21 +1,35 @@
-package com.example.myapplication.model;
+package com.example.dreamtravel.model;
 
-public class RecentsData {
+import android.media.Image;
+
+public class RecentData {
     String placename;
     String countryname;
-    String price;
+    String state;
+    Image imageurl;
 
-    public RecentsData(String placename,String countryname,String price) {
+    public Image getImageurl() {
+        return imageurl;
+    }
+
+    public void setImageurl(Image imageurl) {
+        this.imageurl = imageurl;
+    }
+
+    public void RecentsData(String placename, String state, String countryname) {
         this.placename = placename;
         this.countryname=countryname;
-        this.price=price;
-    }
-    public String getPrice() {
-        return price;
+        this.state=state;
+        this.imageurl=imageurl;
+
     }
 
-    public void setPrice(String price) {
-        this.price = price;
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
     }
 
     public String getPlacename() {
@@ -34,3 +48,4 @@ public class RecentsData {
         this.countryname = countryname;
     }
 }
+
