@@ -1,26 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/con"
-    android:layout_width="0dp"
-    android:layout_height="180dp"
-    android:background="#03DAC6"
-    android:fadeScrollbars="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint"
 
-        android:layout_width="0dp"
-        android:layout_height="180dp"
+        android:layout_width="414dp"
+        android:layout_height="400dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@color/purple_500"
+        android:background="@color/teal_700"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Next Destination"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="279dp"></TextView>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+
+
+            android:layout_marginTop="52dp"
+            android:background="@drawable/search_bg"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:paddingStart="16dp"
+            android:text="Sreach Destination"
+            android:textColor="#62878F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.652"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text1"
+            tools:ignore="NotSibling" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="67dp"
+            android:layout_height="64dp"
+            tools:layout_editor_absoluteX="348dp"
+            tools:layout_editor_absoluteY="205dp"
+            tools:srcCompat="@tools:sample/avatars"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/text"
@@ -28,57 +72,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:fontFamily="@font/rubik_mono_one"
         android:text="Find Your"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-      
         app:layout_constraintTop_toTopOf="parent"></TextView>
-
-
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/rubik_mono_one"
-        android:text="Next Destination"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text"
-        app:layout_constraintStart_toStartOf="@id/text"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="1.0"></TextView>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="52dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/account" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-
-        android:drawableLeft="@drawable/ic_baseline_search_24"
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:padding="16dp"
-        android:paddingStart="16dp"
-        android:text="Sreach Destination"
-        android:textColor="#62878F"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@id/text1"
-        app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <TextView
         android:id="@+id/text2"
@@ -86,7 +84,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/rubik_mono_one"
         android:text="Recent"
         android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,14 +91,13 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraint"
-        app:layout_constraintVertical_bias="0.562"></TextView>
+        app:layout_constraintVertical_bias="0.014"></TextView>
 
     <TextView
         android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:fontFamily="@font/rubik_mono_one"
         android:text="See All"
         android:textColor="@android:color/background_dark"
         android:textSize="12sp"
@@ -120,6 +116,11 @@
         app:layout_constraintTop_toBottomOf="@+id/text2">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
