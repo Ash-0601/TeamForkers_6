@@ -1,14 +1,17 @@
-package com.example.myapplication;
+package com.example.dreamtravel.model
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.media.Image
 
-import android.os.Bundle;
+class RecentData {
+ var placename: String? = null
+ var countryname: String? = null
+ var state: String? = null
+ var imageurl: Image? = null
 
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
+ fun RecentsData(placename: String?, state: String?, countryname: String?) {
+  this.placename = placename
+  this.countryname = countryname
+  this.state = state
+  imageurl = imageurl
+ }
 }
