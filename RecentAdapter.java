@@ -1,4 +1,4 @@
-package com.example.uttrakhandtoruism.adapter;
+package com.example.dreamtravel.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
